@@ -1,0 +1,20 @@
+<form [formGroup]="product" (ngSubmit)="addProductDetails()">
+    <table>
+        <tr>
+            <td>Product Name</td>
+            <td><input type="text" formControlName="productName"></td>
+        </tr>
+        <tr>
+            <td>Brand Name</td>
+            <td><input type="text" formControlName="brandName"></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type="number" formControlName="price"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add Product"></td>
+        </tr>
+    </table>
+</form>
